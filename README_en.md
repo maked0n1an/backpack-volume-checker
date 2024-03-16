@@ -1,55 +1,56 @@
-<h1 align="center">Backpack Чекер Объемов<h1>
+<h1 align="center">Backpack Volume Checker<h1>
 
-The README in Russian can be found here: [README.md](https://github.com/maked0n1an/backpack-volume-checker/blob/main/README.md).
+The README in Russian can be found here: [README_en.md](https://github.com/maked0n1an/backpack-volume-checker/blob/main/README.md).
 
-## 🔗 Ссылки
+## 🔗 Links
 🔔 Channel: 
 [![Telegram channel](https://img.shields.io/endpoint?url=https://runkit.io/damiankrawczyk/telegram-badge/branches/master?url=https://t.me/crypto_maked0n1an)](https://t.me/crypto_maked0n1an)
 
-<h2>Описание</h2>
-Бот создан для проверки объема в BackPack. Код выполняется асинхронно, данные не часто совпадают с сайтом
+<h2>Description</h2>
+Bot created to check volume in BackPack. The code is executed asynchronously, the data sometimes does not match the site
 
-Для работы нужно вставить:
-- куки в 'input_data/cookies'; 
-- прокси в 'input_data/proxies.txt'; 
-- имена для аккаунтов в 'input_data/account_names.txt' (опционально, читай 'input_data/config.py')
-Форк от автора: https://github.com/3asyPe/backpack-volume-checker
+For work you need to insert:
+- cookies in 'input_data/cookies'; 
+- proxies in 'input_data/proxies.txt'; 
+- account names in 'input_data/account_names.txt' (optionally, read 'input_data/config.py')
 
-Как получить куки?
-1. Залогиньтесь на каждый аккаунт проекта;
-2. Нажмите F12;
-3. Зайдите на вкладку «Сеть» любой файл, который будет .
-3. Нажмите фильтр 'Fetch/XHR' чуть ниже;
-4. Берем любой файл, который будет с оранжевым знаком и без расширения (например, файл 'user' или 'capital' или 'assets').
-5. В Request Headers найдите header/секцию под названием 'Cookie' и полностью скопируйте её значение
-6. Вставьте в 'input_data/cookies', одни куки - одна строка
+Fork from the author: https://github.com/3asyPe/backpack-volume-checker
 
-Подробнее на скрине ниже:
+How to get a cookie?
+1. Log in to each project account;
+2. Press F12;
+3. Go to the 'Network' tab any file that will .
+3. Click the 'Fetch/XHR' filter just below;
+4. Take any file that will have an orange sign and no extension (like the 'user' or 'capital' or 'assets' file).
+5. In Request Headers, find the header/section called 'Cookie' and copy its value completely
+6. Paste into 'input_data/cookies', one cookie is one line
+
+See the screenshot below for more details:
 
 ![](https://github.com/maked0n1an/backpack-volume-checker/blob/main/instruction.png)
 
 
-## Установка и запуск
-Если у тебя нет знаний по поводу установки Питона и его запуска, аудита софтов, то тебе в раздел [Ccылки](#ссылки):
+## Installation and launch
+If you don’t have knowledge about installing Python and running it, then go to the section [Links](#links):
 
-* Устанавливаем библиотеки:
+* Install libs:
 <pre><code>pip install -r requirements.txt</code></pre>
-* Заходим в папку zk-bridge:
+* Go to 'backpack-volume-checker' folder:
 <pre><code>cd backpack-volume-checker</code></pre>
-* Прочти 'input_data/settings.py' внимательно и сделай настройку.
-* Запускаем в терминале:
+* Read 'input_data/settings.py' carefully and set settings you need.
+* Launch in terminal:
 <pre><code>python main.py</code></pre>
 
-## Донаты (EVM): 
+## Donats (EVM):
 <pre><code>0x74eEfCAD1Ad18705596106703A3036BaAD6B3145</code></pre>
 
-## Отказ от ответственности и рекомендации по Безопасности
+## Disclaimer and Safety Advice
 
-Любое использование данного продукта осуществляется на усмотрение конечного пользователя. В контексте данного использования включаются, но не ограничиваются, сферы потери девственности, финансовых средств и суеверных практик.
-Отмечаем, что за потерянные денежные средства, произошедшие в результате использования продукта, мы не несем ответственности. Рекомендуем внимательно ознакомиться с кодом продукта, произвести его полный осмотр, и удостовериться в том, что данные не передаются или не "утекают" в процессе его функционирования.
+Any use of this product is at the discretion of the end user. This usage includes, but is not limited to, the areas of virginity loss, financial means, and superstitious practices.
+Please note that we are not responsible for lost money resulting from the use of the product. We recommend that you carefully read the product code, perform a full inspection of it, and make sure that data is not transferred or “leaked” during its operation.
 
-## Ссылки 
-<a name="Ссылки"></a> 
+## Links
+<a name="Links"></a>
 - https://t.me/crypto_maked0n1an
-- [Гайд по аудиту софтов на наличие скамов](https://teletype.in/@brokeboi/dsxymHafdZb)
-- [Ультимативный гайд по запуску скриптов. Python.](https://teletype.in/@hodlmod.eth/how-to-run-scripts)
+- [Guide to auditing software for scams. Python. (RU)](https://teletype.in/@brokeboi/dsxymHafdZb)
+- [The ultimate guide to running scripts. Python. (RU)](https://teletype.in/@hodlmod.eth/how-to-run-scripts)
