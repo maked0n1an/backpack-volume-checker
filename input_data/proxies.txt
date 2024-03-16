@@ -1,0 +1,2 @@
+protocol://login:password@ip:port
+protocol://login:password@ip:port
