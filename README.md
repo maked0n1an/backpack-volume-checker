@@ -6,7 +6,7 @@ The README in English can be found here: [README_en.md](https://github.com/maked
 🔔 Channel: 
 [![Telegram channel](https://img.shields.io/endpoint?url=https://runkit.io/damiankrawczyk/telegram-badge/branches/master?url=https://t.me/crypto_maked0n1an)](https://t.me/crypto_maked0n1an)
 
-<h2>Description</h2>.
+<h2>Description</h2>
 Bot created to check volume in BackPack. The code is executed asynchronously, the data sometimes does not match the site
 
 For work you need to insert:
@@ -25,6 +25,7 @@ How to get a cookie?
 6. Paste into 'input_data/cookies', one cookie is one line
 
 See the screenshot below for more details:
+
 ![](https://github.com/maked0n1an/backpack-volume-checker/blob/main/instruction.png)
 
 
