@@ -1,6 +1,6 @@
 <h1 align="center">Backpack Чекер Объемов<h1>
 
-The README in English can be found here: [README.md](https://github.com/maked0n1an/backpack-volume-checker/blob/main/README_en.md).
+The README in English can be found here: [README_en.md](https://github.com/maked0n1an/backpack-volume-checker/blob/main/README_en.md).
 
 ## 🔗 Ссылки
 🔔 Channel: 
