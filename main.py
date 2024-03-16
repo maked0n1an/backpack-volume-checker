@@ -74,7 +74,7 @@ async def main():
     site = 'https://api.eu.backpack.exchange/wapi/v1/history/fills'
 
     params = {
-        'limit': '10000000',
+        'limit': '100000000',
     }
     headers = {
         'authority': 'api.eu.backpack.exchange',
@@ -132,7 +132,7 @@ async def main():
                 else:
                     fee += float(fill_order['fee'])
         floated_volume = round(volume, 4)
-        floated_fee = round(fee, 4)
+        floated_fee = round(fee, 2)
 
         logger.info(f"{id:>9} | Total volume (without USDT_USDC pair): {floated_volume:>14} | Spent fee: {floated_fee:10}")
 
