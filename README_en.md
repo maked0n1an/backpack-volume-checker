@@ -7,7 +7,7 @@ The README in Russian can be found here: [README.md](https://github.com/maked0n1
 [![Telegram channel](https://img.shields.io/endpoint?url=https://runkit.io/damiankrawczyk/telegram-badge/branches/master?url=https://t.me/crypto_maked0n1an)](https://t.me/crypto_maked0n1an)
 
 <h2>Description</h2>
-Bot created to check volume in BackPack. The code is executed asynchronously, the data sometimes does not match the site
+The bot is created to check the volume in BackPack. All data from the console is written to main.log. The code is executed asynchronously, the data does not match 100% with the site.
 
 For work you need to insert:
 - cookies in 'input_data/cookies'; 
