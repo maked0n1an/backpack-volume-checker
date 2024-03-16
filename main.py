@@ -30,7 +30,7 @@ def get_accounts():
                 "name": _id,
                 "cookies": cookies,
                 "proxy": proxy
-            } for _id, (cookies, proxy) in enumerate(zip(COOKIES, PROXIES * len(PROXIES)), start=1)
+            } for _id, (cookies, proxy) in enumerate(zip(COOKIES, PROXIES * len(COOKIES)), start=1)
         ]
 
     return accounts
