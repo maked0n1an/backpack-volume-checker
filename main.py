@@ -101,10 +101,10 @@ async def main():
         for cookie in individual_cookies:
             if cookie.startswith('session='):
                 session_value = cookie.split('=')[1]
-            elif cookie.startswith('aws-waf-token='):
+            if cookie.startswith('aws-waf-token='):
                 aws_waf_token_value = cookie.split('=')[1]
         
-        if session_value and aws_waf_token_value:
+        if session_value or aws_waf_token_value:
             cookies = {
                 'aws-waf-token': aws_waf_token_value,
                 'session': session_value
