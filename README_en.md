@@ -14,6 +14,7 @@ For work you need to insert:
 - proxies in 'input_data/proxies.txt'; 
 - account names in 'input_data/account_names.txt' (optionally, read 'input_data/config.py')
 
+Logs will be displayer in 'user_data/logs' folder
 Fork from the author: https://github.com/3asyPe/backpack-volume-checker
 
 How to get a cookie?

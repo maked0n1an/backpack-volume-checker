@@ -14,6 +14,7 @@ The README in English can be found here: [README_en.md](https://github.com/maked
 - прокси в 'input_data/proxies.txt'; 
 - имена для аккаунтов в 'input_data/account_names.txt' (опционально, читай 'input_data/config.py')
 
+Логи будут в 'user_data/logs' папке
 Форк от автора: https://github.com/3asyPe/backpack-volume-checker
 
 Как получить куки?
