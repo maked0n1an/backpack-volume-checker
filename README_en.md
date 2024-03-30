@@ -7,14 +7,15 @@ The README in Russian can be found here: [README.md](https://github.com/maked0n1
 [![Telegram channel](https://img.shields.io/endpoint?url=https://runkit.io/damiankrawczyk/telegram-badge/branches/master?url=https://t.me/crypto_maked0n1an)](https://t.me/crypto_maked0n1an)
 
 <h2>Description</h2>
-The bot is created to check the volume in BackPack. All data from the console is written to main.log. The code is executed asynchronously, the data does not match 100% with the site.
+
+The bot is created to check the volume in [Backpack](https://backpack.exchange/refer/maked0n1an)
+All data from the console is written to 'user_data/logs/main.log'. The code is executed asynchronously, the data matches 100% with the site.
 
 For work you need to insert:
 - cookies in 'input_data/cookies'; 
 - proxies in 'input_data/proxies.txt'; 
 - account names in 'input_data/account_names.txt' (optionally, read 'input_data/config.py')
 
-Logs will be displayer in 'user_data/logs' folder
 Fork from the author: https://github.com/3asyPe/backpack-volume-checker
 
 How to get a cookie?

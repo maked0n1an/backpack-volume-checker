@@ -7,7 +7,9 @@ The README in English can be found here: [README_en.md](https://github.com/maked
 [![Telegram channel](https://img.shields.io/endpoint?url=https://runkit.io/damiankrawczyk/telegram-badge/branches/master?url=https://t.me/crypto_maked0n1an)](https://t.me/crypto_maked0n1an)
 
 <h2>Описание</h2>
-Бот создан для проверки объема в BackPack. Все данные с консоли пишутся в логи main.log. Код выполняется асинхронно, данные не совпадают на 100% с сайтом.
+
+Бот создан для проверки объема в [Backpack](https://backpack.exchange/refer/maked0n1an) 
+Все данные с консоли пишутся в логи 'user_data/logs/main.log'. Код выполняется асинхронно, данные совпадают на 100% с сайтом.
 
 Для работы нужно вставить:
 - куки в 'input_data/cookies'; 
