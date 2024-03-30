@@ -39,22 +39,6 @@ class BackPack:
 
     def _add_cookies(self, cookies: str):
         self.headers['cookie'] = cookies
-        # individual_cookies = cookies.split('; ')
-
-        # session_value = None
-        # aws_waf_token_value = None
-        # for cookie in individual_cookies:
-        #     if cookie.startswith('session='):
-        #         session_value = cookie.split('=')[1]
-        #     if cookie.startswith('aws-waf-token='):
-        #         aws_waf_token_value = cookie.split('=')[1]
-
-        # if session_value or aws_waf_token_value:
-        #     self.headers['cookies']
-        #     cookies = {
-        #         'aws-waf-token': aws_waf_token_value,
-        #         'session': session_value
-        #     }
 
     async def get_all_volume(self) -> float:
         params = {
@@ -80,7 +64,7 @@ class BackPack:
 
     async def get_fees_for_trades(self) -> float:
         params = {
-            'limit': '20000000000'
+            'limit': '2000000000'
         }
 
         response = await self._make_request(url=self.ORDER_HISTORY_URL, params=params)
