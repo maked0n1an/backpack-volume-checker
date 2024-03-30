@@ -8,7 +8,7 @@ The README in English can be found here: [README_en.md](https://github.com/maked
 
 <h2>Описание</h2>
 
-Бот создан для проверки объема в [Backpack](https://backpack.exchange/refer/maked0n1an) 
+Бот создан для проверки объема в [Backpack](https://backpack.exchange/refer/maked0n1an).
 Все данные с консоли пишутся в логи 'user_data/logs/main.log'. Код выполняется асинхронно, данные совпадают на 100% с сайтом.
 
 Для работы нужно вставить:
@@ -16,7 +16,6 @@ The README in English can be found here: [README_en.md](https://github.com/maked
 - прокси в 'input_data/proxies.txt'; 
 - имена для аккаунтов в 'input_data/account_names.txt' (опционально, читай 'input_data/config.py')
 
-Логи будут в 'user_data/logs' папке
 Форк от автора: https://github.com/3asyPe/backpack-volume-checker
 
 Как получить куки?

@@ -8,7 +8,7 @@ The README in Russian can be found here: [README.md](https://github.com/maked0n1
 
 <h2>Description</h2>
 
-The bot is created to check the volume in [Backpack](https://backpack.exchange/refer/maked0n1an)
+The bot is created to check the volume in [Backpack](https://backpack.exchange/refer/maked0n1an).
 All data from the console is written to 'user_data/logs/main.log'. The code is executed asynchronously, the data matches 100% with the site.
 
 For work you need to insert:
