@@ -16,8 +16,8 @@ from backpack_lib.utils.config import (
 from backpack_lib.utils.utils import format_output
 from user_data.settings.settings import IS_ACCOUNT_NAMES
 from user_data.settings.modules_settings import (
-    get_all_volume_and_fees,
-    get_first_volume,
+    get_current_volume_and_fees,
+    get_first_volume_and_fees,
 )
 
 
@@ -84,8 +84,8 @@ def get_module():
     result = questionary.select(
         "Select a method to get started",
         choices=[
-            Choice("1) Get volume before 18th March 2024", get_first_volume),
-            Choice("2) Get current volume and spent fees", get_all_volume_and_fees),
+            Choice("1) Get volume and spent fees before 18th March 2024", get_first_volume_and_fees),
+            Choice("2) Get current volume and spent fees", get_current_volume_and_fees),
             Choice("3) Exit", "exit"),
         ],
         qmark="⚙️ ",

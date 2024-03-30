@@ -1,8 +1,8 @@
+from datetime import datetime
 import aiohttp
 
 from backpack_lib.models.account_info import AccountInfo
 from backpack_lib.models.custom_logger import logger
-
 
 
 class BackPack:
@@ -51,6 +51,37 @@ class BackPack:
 
         return volume
 
+    async def get_fees_before_end_of_first_phase(self) -> float:
+        params = {
+            'limit': '1000000000'
+        }
+
+        response = await self._make_request(url=self.ORDER_HISTORY_URL, params=params)
+        fee = 0
+        snapshot_time = datetime(2024, 3, 18, 23, 0)
+
+        for fill_order in response:
+
+            if fill_order["symbol"] == "USDT_USDC":
+                continue
+
+            fill_order_timestamp = (
+                datetime.strptime(
+                    fill_order["timestamp"], "%Y-%m-%dT%H:%M:%S.%f")
+                if '.' in fill_order["timestamp"]
+                else datetime.strptime(fill_order["timestamp"], "%Y-%m-%dT%H:%M:%S")
+            )
+
+            if fill_order_timestamp <= snapshot_time:
+                if fill_order['feeSymbol'] != "USDC":
+                    fee += float(fill_order["fee"]) * \
+                        float(fill_order['price'])
+                else:
+                    fee += float(fill_order['fee'])
+
+        floated_fee = round(fee, 2)
+        return floated_fee
+
     async def get_volume_for_first_season_first_phase(self) -> float:
         params = {
             'interval': 'seasonOnePhaseOne'
@@ -69,11 +100,11 @@ class BackPack:
 
         response = await self._make_request(url=self.ORDER_HISTORY_URL, params=params)
         fee = 0
-        
+
         for fill_order in response:
             if fill_order["symbol"] == "USDT_USDC":
                 continue
-                
+
             if fill_order['feeSymbol'] != "USDC":
                 fee += float(fill_order["fee"]) * float(fill_order['price'])
             else:
@@ -97,10 +128,10 @@ class BackPack:
                     headers=self.headers,
                     proxy=self.proxy,
                 )
-                
+
                 if request.status > 201:
                     logger.error(f"Not valid request: {request.text}")
-                return await request.json()                  
-                
+                return await request.json()
+
         except Exception as e:
             logger.error(f"An error occurred: {e}")
