@@ -68,15 +68,13 @@ class BackPack:
         }
 
         response = await self._make_request(url=self.ORDER_HISTORY_URL, params=params)
-        volume = fee = 0
+        fee = 0
         
         for fill_order in response:
             if fill_order["symbol"] == "USDT_USDC":
                 continue
-            
-            volume += float(fill_order["quantity"]) * float(fill_order["price"])
                 
-            if fill_order['side'] == "Bid":
+            if fill_order['feeSymbol'] != "USDC":
                 fee += float(fill_order["fee"]) * float(fill_order['price'])
             else:
                 fee += float(fill_order['fee'])

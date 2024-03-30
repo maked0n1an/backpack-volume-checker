@@ -8,7 +8,7 @@ logger.add(
     "{level: <8}</level> | <white>{message}</white>"
 )
 logger.add(
-    "main.log",
+    "user_data/logs/main.log",
     format="<green>{time: DD/MM/YYYY HH:mm:ss}</green> | <level>"
     "{level: <8}</level> | <white>{message}</white>"
 )

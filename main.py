@@ -122,29 +122,6 @@ async def main(module):
         tasks.append(task)
 
     await asyncio.gather(*tasks)
-        
-        # id = str(account['name'])
-        # cookies = str(account['cookies'])
-
-        # volume = fee = 0
-        # if result is None:
-        #     continue
-
-        # for fill_order in result:
-        #     if fill_order["symbol"] != "USDT_USDC":
-        #         volume += float(fill_order["quantity"]) * \
-        #             float(fill_order["price"])
-
-        #         if fill_order['side'] == "Bid":
-        #             fee += float(fill_order["fee"]) * \
-        #                 float(fill_order['price'])
-        #         else:
-        #             fee += float(fill_order['fee'])
-        # floated_volume = round(volume, 2)
-        # floated_fee = round(fee, 2)
-
-        # logger.info(
-        #     f"{id:>9} | Total volume (without USDT_USDC pair): {floated_volume:>14} | Spent fee: {floated_fee:10}")
 
 if __name__ == "__main__":
     greetings()
